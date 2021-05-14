@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+         <bean id="address1" class="com.customerinfo.Address">
+        <property name="street" value="41,Vallabhai Road"></property>
+        <property name="city" value="Hassan"></property>
+        <property name="state" value="Karnataka"></property>
+        <property name="zip" value="573125"></property>
+        <property name="country" value="India"></property>
+        </bean>
+        
+        <bean id="customer" class="com.customerinfo.Customer">
+        <property name="customerId" value="1"></property>
+        <property name="customerName" value="Vidya"></property>
+        <property name="customerContact" value="1234567890"></property>
+        <property name="customerAddress" value="address1"></property>
+        </bean> 
+        
+        <!-- <bean id="a1" class="com.customerinfo.Address">
+        <constructor-arg value="41,Vallabhai Road"></constructor-arg>
+        <constructor-arg value="Hassan"></constructor-arg>
+        <constructor-arg value="Karnataka"></constructor-arg>
+        <constructor-arg value="573125"></constructor-arg>
+        <constructor-arg value="India"></constructor-arg>
+        </bean>
+        
+        <bean id="c" class="com.customerinfo.Customer">
+        <constructor-arg value="2"></constructor-arg>
+        <constructor-arg value="Bhavya"></constructor-arg>
+        <constructor-arg value="567894321"></constructor-arg>
+        <constructor-arg>
+        <ref bean="a1"/>
+        </constructor-arg>
+        </bean> -->
+        </beans>
